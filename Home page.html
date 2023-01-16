@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="Introdiv">
+        <h2 id="heading1">Techno Blog</h2>
+        <a href="" class="div1links" onclick="scrolldiv">About</a>&nbsp;
+        <script>
+            function scrolldiv() {
+                window.scrollTo(0, 
+          findPosition(document.getElementById("about-p")));
+            }
+            function findPosition(obj) {
+                var currenttop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        currenttop += obj.offsetTop;
+                    } while ((obj = obj.offsetParent));
+                    return [currenttop];
+                }
+            }
+        </script>
+        <a href="" class="div1links">Projects</a>&nbsp;
+        <a href="" class="div1links">Services</a>&nbsp;
+        <a href="" class="div1links">Plans</a>&nbsp;
+        <a href=""class="div1links">Contact</a>
+    </div>
+    <div id="imagediv">
+        <img src="images/pexels-steve-johnson-1545505.jpg"  alt="Italian Trulli" class="backgroundimg1"  height="800px" width="100%">
+        <div id="image-text"> I'm a paragraph. Click here to add your own text
+            and edit me. It’s easy. <br>
+            Just click “Edit Text” or double click me <br>
+            to add your own content and
+            <br>make changes to the font.
+        </div>
+    </div>
+    
+    <div id="about">
+        <p id="about-p">
+            <h1>About</h1><br><br>I'm a paragraph. Click here to add your own text and edit me. It’s easy. <br>
+            Just click “Edit Text” or double click me to add your own content and make changes to the font.<br>
+            Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and 
+            <br>let your users know a little more about you.
+        </p>
+        <p>I'm a paragraph ABC. Click here to add your own text and edit me. Its easy.<br>
+            Just click “Edit Text” or double click me to add your own content and <br>
+            make changes to the font.<br>
+            I'm a great place for you to tell a story and let your users know a little more about you.
+        </p>
+        <button class="buttons" onclick="scrolldiv()">Scroll</button>
+        <script>
+            function scrolldiv() {
+                window.scrollTo(0, 
+          findPosition(document.getElementById("Introdiv")));
+            }
+            function findPosition(obj) {
+                var currenttop = 0;
+                if (obj.offsetParent) {
+                    do {
+                        currenttop += obj.offsetTop;
+                    } while ((obj = obj.offsetParent));
+                    return [currenttop];
+                }
+            }
+        </script>
+    </div>
+
+    <div id = projects>
+        <h2 style="text-align: center;">Projects</h2><br>
+        <div id="p1">
+        <h3>Project1</h3>
+        <p>I'm a paragraph. Click here to add your own text and edit me. Its easy.<br>
+            Just click “Edit Text” or double click me to add your own content and <br>
+            make changes to the font.<br>
+            I'm a great place for you to tell a story and let your users know a little more about you.
+        </p>        
+        </div>
+        <div id="p2">
+        <h3 style="right:150px;">Project2</h3>
+        <p>I'm a paragraph. Click here to add your own text and edit me. Itss easy.<br>
+            Just click “Edit Text” or double click me to add your own content and <br> make changes to the font.<br>
+            I'm a great place for you to tell a story and let your users know a little more about you.
+        </p>
+        </div>
+    </div>
+
+    <div id="content-section">
+        <div id="cs-1">
+            <h2 style="font-style: italic;">Address<br></h2>
+            <p>© 2023 American Association for Public Opinion Research. <br>
+                All Rights Reserved. <br> 1436 Duke Street,<br>
+                Alexandria, Virginia 22314<br>(847) 686-2230.
+            </p>
+        </div>
+
+        <div id="cs-2">
+            <h2 style="font-style: italic;">Connect Us<br></h2>
+            <ul>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="about.html" >About</a></li>
+              </ul> 
+        </div>
+
+        <div id="cs-3">
+            <h2 style="font-style: italic;">Address<br></h2>
+            <p>© 2023 American Association for Public Opinion Research. <br>
+                All Rights Reserved. <br> 1436 Duke Street,<br>
+                Alexandria, Virginia 22314<br>(847) 686-2230.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
